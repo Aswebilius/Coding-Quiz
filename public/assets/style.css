@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: mediumaquamarine;
+}
+
+.start-btn,
+.quiz-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz-info {
+    width: 700px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.start-btn button {
+    font-size: 25px;
+    font-weight: 500;
+    background-color: white;
+    color: blue;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ 
