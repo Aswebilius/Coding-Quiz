@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Yourself Coding Quiz</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
 </head>
+
 <body>
 
     <!--Start the Quiz-->
     <div class="start-btn">
         <button>Start!</button>
     </div>
-    
+
+    <!--Quiz Instructions-->
     <div class="quiz-info">
         <div class="info-title">
             <span>Instructions</span>
         </div>
         <div class="rules-list">
-            <ol>
-                <div class="rule">1)    You will have <span>20 seconds</span> per question.</div>
-                <div class="rule">2)    Be careful when you choose your answer as you cannot change it.</div>
-                <div class="rule">3)    If you run out of time before making a selecting an answer you will not be able to select one.</div>
-                <div class="rule">4)    You must finish the quiz before being able to exit it.</div>
-                <div class="rule">5)    Points will be given for each correct answer.</div>
-                <div class="rule">6)    Do your best and have fun!</div>
-            </ol>
+            <div class="rule">1) You will have <span>10 seconds</span> per question.</div>
+            <div class="rule">2) Be careful when you choose your answer as you cannot change it.</div>
+            <div class="rule">3) You will be unable to select an answer once the time expires.</div>
+            <div class="rule">4) You must finish the quiz before being able to exit it.</div>
+            <div class="rule">5) Points will be given for each correct answer.</div>
+            <div class="rule">6) Do your best and have fun!</div>
+        </div>
+
+        <!--Exit the Quiz-->
+        <div class="buttons">
+            <button class="exit">Exit Quiz</button>
+            <button class="restart">Take Again</button>
         </div>
     </div>
 
-    <!--Exit the Quiz-->
+    <!--Quiz-->
+    <div class="quiz">
+        <header>
+            <div class="quiz-title">Web Developer Quiz!</div>
+            <div class="timer">
+                <div class="timer-txt">Time Left:</div>
+                <div class="timer-secs">20</div>
+            </div>
+        </header>
+        <section>
+            <div class="quiz-questions">
+                <span>What does HTML stand for?</span>
+            </div>
+            <div class="answer-list">
+                <div class="answer">
+                    <span>Hyper Technical Marking Language</span>
+                    <div class="icon incorrect"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="answer">
+                    <span>Hierarchy Teaching Matrix Lesson</span>
+                </div>
+                <div class="answer">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon correct"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="answer">
+                    <span>Hipsters Textile Meeting Location</span>
+                </div>
+            </div>
+        </section>
 
-    <div class="exit-btn">
-        <button class="exit">Exit Quiz</button>
-        <button class="restart">Take Again</button>
+        <footer>
+            <div class="total-questions">
+                <span><p>1</p>out of<p>10</p>Questions</span>
+            </div>
+            <button class="next">Next</button>
+        </footer>
+    </div>
+
+    <div class="quiz-results">
+        <div class="icon">
+            <i class="fas fa-glass-cheers"></i>
+        </div>
+            <div class="finished-text">You have completed the quiz!</div>
+            <div class="result-text">
+                <span>You scored <p>10</p> out of <p>10</p></span>
+            </div>
+            <div class="buttons">
+                <button class="restart">Play Again</button>
+                <button class="exit">Exit Quiz</button>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
